@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: local('Helvetica Light'), local('Helvetica-Light'),
+        url('../fonts/Helvetica-Light.woff2') format('woff2'),
+        url('../fonts/Helvetica-Light.woff') format('woff'),
+        url('../fonts/Helvetica-Light.svg#Helvetica-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica'),
+  url('../fonts/Helvetica.woff2') format('woff2'),
+  url('../fonts/Helvetica.woff') format('woff'),
+  url('../fonts/Helvetica.svg#Helvetica') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: local('Helvetica‭ ‬עבה'), local('Helvetica-Bold'),
+        url('../fonts/Helvetica-Bold.woff2') format('woff2'),
+        url('../fonts/Helvetica-Bold.woff') format('woff'),
+        url('../fonts/Helvetica-Bold.svg#Helvetica-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+  font: 300 18px/24px $priFont;
+}

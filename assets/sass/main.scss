@@ -1,0 +1,47 @@
+
+
+// -------------------------------------------------
+// 3rd party libraries
+
+  @import './plugins/slick.scss';
+  @import './bootstrap/bootstrap-grid.scss';
+
+
+// -------------------------------------------------
+// Helper
+  @import './helper/variables.scss';
+  @import './helper/functions.scss';
+  @import './helper/mixins.scss';
+  @import './helper/classes.scss';
+
+
+// -------------------------------------------------
+// Base
+
+  @import './base/reset.scss';
+  @import './base/typography.scss';
+
+
+// -------------------------------------------------
+// Components
+
+  @import './components/buttons.scss';
+  @import './components/carousel.scss';
+  @import './components/banner.scss';
+  @import './components/loader.scss';
+
+
+// -------------------------------------------------
+// Layout
+
+  @import './layout/header.scss';
+  @import './layout/nav.scss';
+  @import './layout/footer.scss';
+  @import './layout/sidebar.scss';
+  @import './layout/forms.scss';
+
+
+// -------------------------------------------------
+// pages
+
+  @import './pages/home.scss';
