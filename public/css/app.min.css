@@ -85,6 +85,23 @@
 button.slick-prev.slick-arrow {
   background: transparent; }
 
+.slick-dots li {
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 30px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .slick-dots li button {
+    color: transparent;
+    width: 14px;
+    height: 14px;
+    background: #333;
+    border-radius: 15px;
+    border: none; }
+
 /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -1704,6 +1721,11 @@ html {
   content: "";
   clear: both; }
 
+.align-middle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -1776,6 +1798,107 @@ input[type="subnit"], input[type="button"], input[type="date"], button, select {
 body {
   font: 300 18px/24px "Helvetica"; }
 
+.hero_banner_slider {
+  padding: 30px 0; }
+  .hero_banner_slider_holder .hero_banner_group {
+    position: relative; }
+    .hero_banner_slider_holder .hero_banner_group .hero_offer_content {
+      padding: 60px 0; }
+      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_detail .hero_offer_discount {
+        font: 700 46px "Helvetica";
+        color: #BE081E;
+        margin-bottom: 20px; }
+      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_detail .hero_offer_title {
+        font: 300 30px "Helvetica";
+        color: #000;
+        margin-bottom: 10px; }
+      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_detail .hero_offer_des_text {
+        font: 300 18px/26px "Helvetica";
+        color: #4A4A4A;
+        margin-bottom: 30px; }
+      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_price .regular_price_text {
+        font: 500 21px "Helvetica";
+        color: #7d7d7d;
+        text-decoration: line-through; }
+      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_price .sale_price {
+        font: 700 36px "Helvetica";
+        color: #BE081E;
+        text-transform: uppercase; }
+      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form {
+        margin-top: 30px; }
+        .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form_holder {
+          position: relative; }
+          .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form_holder .site_form input[type="text"] {
+            width: 100%;
+            height: 50px;
+            font: 500 16px "Helvetica";
+            color: #4A4A4A;
+            background-color: #f7f7f7;
+            padding: 0px 15px;
+            border: none;
+            border-radius: 3px; }
+            .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form_holder .site_form input[type="text"]:focus {
+              outline: none; }
+          .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form_holder .site_form input[type="submit"] {
+            width: 100px;
+            height: 50px;
+            font: 500 16px "Helvetica";
+            color: #fff;
+            background: #7CA3DC;
+            birder: none;
+            border-radius: 0px 3px 3px 0px;
+            position: absolute;
+            top: 0;
+            right: 0; }
+            .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form_holder .site_form input[type="submit"]:focus {
+              outline: none; }
+      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_counter {
+        margin-top: 30px; }
+        .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_counter_holder .counter_caption {
+          font: 700 14px "Helvetica";
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          color: #4A4A4A; }
+        .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_counter_holder .counter-group-item {
+          display: inline-block;
+          width: 100px;
+          text-align: center;
+          position: relative; }
+          .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_counter_holder .counter-group-item .numaric {
+            background: #fff;
+            height: 80px;
+            width: 100%;
+            display: block;
+            font: 700 46px/80px "Helvetica";
+            border-radius: 5px; }
+            .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_counter_holder .counter-group-item .numaric#seconds {
+              color: #BE081E; }
+          .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_counter_holder .counter-group-item .caption {
+            font: 400 16px "Helvetica";
+            color: #4A4A4A;
+            letter-spacing: 2px;
+            text-transform: uppercase; }
+          .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_counter_holder .counter-group-item:not(:last-child):after {
+            content: '';
+            width: 1px;
+            height: 50%;
+            background: #E3E2E2;
+            position: absolute;
+            -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            top: 50%;
+            right: 0; }
+    .hero_banner_slider_holder .hero_banner_group:after {
+      content: '';
+      width: 30%;
+      height: 100%;
+      background: #E3E2E2;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1; }
+
 .preloader {
   position: fixed;
   top: 0;
@@ -1803,5 +1926,17 @@ body {
 
 html[lang="ar-AE"] .preloader {
   direction: ltr; }
+
+.site_header_holder {
+  padding: 10px 0;
+  border-bottom: 1px solid #E3E2E2; }
+  .site_header_holder .site_logo img {
+    width: 130px; }
+  .site_header_holder .site_cart {
+    text-align: right; }
+    .site_header_holder .site_cart .site_cart_text {
+      vertical-align: super;
+      font-size: 14px;
+      margin-right: 5px; }
 
 /*# sourceMappingURL=app.min.css.map */

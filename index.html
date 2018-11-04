@@ -9,7 +9,7 @@
 
   <body class="bm-home">
     <!-- Preloader Start -->
-    <div class="preloader">
+      <div class="preloader">
       <div class="preloader-wrapper">
         <img id="image" src="./public/img/a.png">
       </div>
@@ -21,13 +21,13 @@
         <div class="container">
           <div class="site_header_holder">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 align-middle">
                 <div class="site_logo">
-                  <!-- <a href="#"> <img src="./public/svg/logo.svg" alt=""> </a> -->
+                  <a href="#"> <img src="./public/svg/logo.svg" alt=""> </a>
                 </div>
               </div>
 
-              <div class="col-md-6">
+              <div class="col-md-6 align-middle">
                 <div class="site_cart">
                   <span class="site_cart_text">Free Shipping Sitewide!</span>
                   <span class="site_cart_icon">
@@ -50,43 +50,393 @@
       <section class="hero_banner_slider">
         <div class="hero_banner_slider_holder">
           <div class="container">
-            <div class="row">
-              <div class="col-md-5">
-                <div class="hero_offer">
-                  <div class="hero_offer_detail">
-                    <div class="hero_offer_discount">
-                      <h1 class="hero_offer_discount_text">90% Off</h1>
+            <div class="hero_banner_group">
+              <div class="row align-middle">
+                <div class="col-md-5">
+                  <div class="hero_offer_content">
+                    <div class="hero_offer_detail">
+                      <div class="hero_offer_discount">
+                        <h1 class="hero_offer_discount_text">Flash Sale 90% Off</h1>
+                      </div>
+
+                      <div class="hero_offer_title">
+                        <h2 class="hero_offer_title_text">Henes Broon F810 Red</h2>
+                      </div>
+
+                      <div class="hero_offer_des">
+                        <p class="hero_offer_des_text">This broon f810 series ride-on from henes has sophisticated features like sophisticated design, state of the art mechanism, maximum level of safety and the smartest technology.</p>
+                      </div>
                     </div>
 
-                    <div class="hero_offer_title">
-                      <h2 class="hero_offer_title_text">Henes Broon F810 Red</h2>
+                    <div class="hero_offer_price">
+                      <div class="regular_price">
+                        <span class="regular_price_text">3,200 aed</span>
+                      </div>
+
+                      <div class="sale_price">
+                        <span class="sale_price_text">320 aed</span>
+                      </div>
                     </div>
 
-                    <div class="hero_offer_des">
-                      <p class="hero_offer_des_text">This broon f810 series ride-on from henes has sophisticated features like sophisticated design, state of the art mechanism, maximum level of safety and the smartest technology.</p>
+                    <div class="hero_form">
+                      <div class="hero_form_holder">
+                        <form class="site_form" action="javaScript:;" method="post">
+                          <div class="form_holder">
+                            <input type="text" name="" value="" placeholder="Your email address...">
+                            <input type="submit" name="" value="Notify me">
+                          </div>
+                        </form>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="hero_offer_price">
-                    <div class="regular_price">
-                      <span class="regular_price_text">3,200 aed</span>
-                    </div>
+                    <div class="hero_counter">
+                      <div class="hero_counter_holder">
+                        <h4 class="counter_caption">Sale starts in</h4>
 
-                    <div class="sale_price">
-                      <span class="sale_price_text">320 aed</span>
+                        <div class="counter">
+                          <ul class="counter-group">
+                            <li class="counter-group-item"><span class="numaric" id="days">00</span><h4 class="caption">days</h4></li>
+                            <li class="counter-group-item"><span class="numaric" id="hours">00</span><h4 class="caption">Hrs</h4></li>
+                            <li class="counter-group-item"><span class="numaric" id="minutes">00</span><h4 class="caption">Min</h4></li>
+                            <li class="counter-group-item"><span class="numaric" id="seconds">00</span><h4 class="caption">Sec</h4></li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="col-md-7">
+                <div class="col-md-7">
+                  <div class="hero_slider_img">
+                    <div class="hero_slider_img_holder">
+                      <ul class="hero_slider_img_group">
+                        <li class="slider_item"><img src="./public/img/slider-01.png" alt="slider_01"></li>
+                        <li class="slider_item"><img src="./public/img/slider-01.png" alt="slider_01"></li>
+                        <li class="slider_item"><img src="./public/img/slider-01.png" alt="slider_01"></li>
+                      </ul>
+                    </div>
+                  </div>
 
+                  <div class="hero_slider_video">
+                    <div class="hero_slider_video_holder">
+                      <a href="#"><span class="video_icon"></span> <span class="video_text">Play Video</span></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     <!-- Offer Banner End -->
+
+    <!-- Feature Cards Start -->
+      <section class="site_section feature_cards">
+        <div class="container">
+          <div class="site_section_title">
+            <h2 class="site_section_title_text">Features</h2>
+          </div>
+
+          <div class="site_section_holder">
+            <div class="feature_group">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="feature_group_item">
+                    <div class="feature_icon">
+                      <img src="./public/svg/remote-control.svg" alt="">
+                    </div>
+
+                    <div class="feature_title">
+                      <h4 class="feature_title_text">Remote System</h4>
+                    </div>
+
+                    <div class="feature_des">
+                      <p class="feature_des_text">Advanced Remote System Allows Parents to Maneuver Car or Child Can Drive It Once Familiar With Controls.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="feature_group_item">
+                    <div class="feature_icon">
+                      <img src="./public/svg/car.svg" alt="">
+                    </div>
+
+                    <div class="feature_title">
+                      <h4 class="feature_title_text">Functioning Doors</h4>
+                    </div>
+
+                    <div class="feature_des">
+                      <p class="feature_des_text">Broon’s speakers deliever high quality sound. Play your child’s favorite songs and movies.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="feature_group_item">
+                    <div class="feature_icon">
+                      <img src="./public/svg/speed.svg" alt="">
+                    </div>
+
+                    <div class="feature_title">
+                      <h4 class="feature_title_text">Speed Control</h4>
+                    </div>
+
+                    <div class="feature_des">
+                      <p class="feature_des_text">Broon’s speakers deliever high quality sound. Play your child’s favorite songs and movies.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Feature Cards End-->
+
+    <!-- Overview Start -->
+      <section class="site_section overview_cards">
+        <div class="site_section_holder">
+          <div class="container">
+            <div class="site_section_title">
+              <h2 class="site_section_title_text">Features</h2>
+            </div>
+
+            <div class="site_section_holder">
+              <div class="overview_group">
+                <div class="overview_group_item">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="overview_img">
+                        <img src="./public/img/overview-01.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="overview_des">
+                        <p class="overview_des_text">The tail lamps are the key apects of broon’s sophisticated design.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="overview_group_item">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="overview_img">
+                        <img src="./public/img/overview-02.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="overview_des">
+                        <p class="overview_des_text">The tail lamps are the key apects of broon’s sophisticated design.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="overview_group_item">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="overview_img">
+                        <img src="./public/img/overview-03.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="overview_des">
+                        <p class="overview_des_text">The tail lamps are the key apects of broon’s sophisticated design.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Overview End -->
+
+    <!-- Newsletter Start -->
+      <section class="site_section site_newsletter">
+        <div class="site_section_holder">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="newsletter_title">
+                  <h2 class="newsletter_title_text">Our newsletter</h2>
+                  <p class="newsletter_title_des">To hear all about our latest offers and deals</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="newsletter_form">
+                  <div class="newsletter_form_holder">
+                    <input type="text" name="" value="" placeholder="Your email ...">
+                    <input type="text" name="" value="Submit">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Newsletter End -->
+
+    <!-- usps Start -->
+      <section class="site_section site_usps">
+        <div class="site_section_holder">
+          <div class="container">
+            <div class="site_usps_group">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="site_usps_group_item">
+                    <div class="usps_icon">
+                      <img src="" alt="">
+                    </div>
+
+                    <div class="usps_des">
+                      <h2 class="usps_des_title">Free Shipping</h2>
+                      <p class="usps_des_text">On all orders!</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="site_usps_group_item">
+                    <div class="usps_icon">
+                      <img src="" alt="">
+                    </div>
+
+                    <div class="usps_des">
+                      <h2 class="usps_des_title">Free Returns</h2>
+                      <p class="usps_des_text">with in 14 days</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="site_usps_group_item">
+                    <div class="usps_icon">
+                      <img src="" alt="">
+                    </div>
+
+                    <div class="usps_des">
+                      <h2 class="usps_des_title">Price Match</h2>
+                      <p class="usps_des_text">On all products</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="site_usps_group_item">
+                    <div class="usps_icon">
+                      <img src="" alt="">
+                    </div>
+
+                    <div class="usps_des">
+                      <h2 class="usps_des_title">Cash on deliver</h2>
+                      <p class="usps_des_text">available</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- usps End -->
+
+    <!-- Footer Start -->
+      <footer class="site_footer">
+        <div class="site_footer_holder">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="site_footer_nav">
+                  <div class="site_footer_nav_title">
+                    <h2 class="nav_title_text">Top Categories</h2>
+                  </div>
+
+                  <div class="site_footer_nav_links">
+                    <ul class="nav-links">
+                      <li class="link-text"><a href="https://www.sprii.ae/en/toys/">Toys</a></li>
+                      <li class="link-text"><a href="https://www.sprii.ae/en/baby-toddler-diapering-disposable-diapers-disposable-diapers/">Diapers</a></li>
+                      <li class="link-text"><a href="https://www.sprii.ae/en/baby-food/">Baby Food</a></li>
+                      <li class="link-text"><a href="https://www.sprii.ae/en/standard/">Strollers</a></li>
+                      <li class="link-text"><a href="https://www.sprii.ae/en/car-seats/">Car Seats</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="site_footer_nav">
+                  <div class="site_footer_nav_title">
+                    <h2 class="nav_title_text">about</h2>
+                  </div>
+
+                  <div class="site_footer_nav_links">
+                    <ul class="nav-links">
+                      <li class="link-text"><a href="https://www.sprii.ae/en/toys/">Toys</a></li>
+                      <li class="link-text"><a href="https://www.sprii.ae/en/baby-toddler-diapering-disposable-diapers-disposable-diapers/">Diapers</a></li>
+                      <li class="link-text"><a href="https://www.sprii.ae/en/baby-food/">Baby Food</a></li>
+                      <li class="link-text"><a href="https://www.sprii.ae/en/standard/">Strollers</a></li>
+                      <li class="link-text"><a href="https://www.sprii.ae/en/car-seats/">Car Seats</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="site_footer_nav">
+                  <div class="site_footer_nav_title">
+                    <h2 class="nav_title_text">customer service</h2>
+                  </div>
+
+                  <div class="site_footer_nav_links">
+                    <ul class="nav-links">
+                      <li class="link-text"><a href="https://www.sprii.ae/en/toys/">Toys</a></li>
+                      <li class="link-text"><a href="https://www.sprii.ae/en/baby-toddler-diapering-disposable-diapers-disposable-diapers/">Diapers</a></li>
+                      <li class="link-text"><a href="https://www.sprii.ae/en/baby-food/">Baby Food</a></li>
+                      <li class="link-text"><a href="https://www.sprii.ae/en/standard/">Strollers</a></li>
+                      <li class="link-text"><a href="https://www.sprii.ae/en/car-seats/">Car Seats</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="site_footer_nav">
+                  <div class="site_footer_nav_title">
+                    <h2 class="nav_title_text">Company Info</h2>
+                  </div>
+
+                  <div class="site_footer_company">
+                    <p class="company_address">
+                      <span class="street-address">Sprii.com</span><br>
+                      <span class="region">Office 101, Mazaya Business Avenue BB1, JLT, Dubai, UAE</span>
+                    </p>
+
+                    <p class="tel">Tel: +971 (0) 4 379 8112 </p>
+
+                    <p class="fn"><a class="url" href="mailto:hello@sprii.com">hello@sprii.com</a></p>
+
+                    <div class="social-icons-group">
+                        <a class="fa-2x fa fa-facebook" href="https://www.facebook.com/sprii" title="Facebook" target="_blank" rel="noopener"></a>
+                        <a class="fa-2x fa fa-twitter" href="https://twitter.com/spriidotcom" title="Twitter" target="_blank" rel="noopener"></a>
+                        <a class="fa-2x fa fa-youtube" href="https://www.youtube.com/channel/UCjAMB18tE1DYoXcsGVGLVdA" title="Youtube" target="_blank" rel="noopener"></a>
+                        <a class="fa-2x fa fa-instagram" href="https://instagram.com/sprii" title="Instagram" target="_blank" rel="noopener"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- Footer End -->
 
     <!-- Java Script -->
     <script src="./public/js/app.min.js"></script>

@@ -1,0 +1,21 @@
+.site_header {
+  &_holder {
+    padding: 10px 0;
+    border-bottom: 1px solid $sapColor;
+
+    .site_logo {
+      img {
+        width: 130px;
+      }
+    }
+
+    .site_cart {
+      text-align: right;
+      .site_cart_text {
+        vertical-align: super;
+        font-size: 14px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
