@@ -1,0 +1,71 @@
+.site_footer {
+  &_holder {
+    background: #f4f4f4;
+    padding: 55px 0;
+    .site_footer_nav {
+      padding: 0 20px;
+      &_title {
+        font: 700 16px $priFont;
+        color: $priColor;
+        text-transform: uppercase;
+      }
+
+      &_links {
+        margin-top: 20px;
+
+        .nav_links {
+          .link_text {
+            transition: .3s;
+            a {
+              text-decoration: none;
+              font-size: 16px;
+            }
+
+            &:not(:last-child) {
+              margin-bottom: 8px;
+            }
+
+            &:hover {
+              padding-left: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .site_footer_company {
+      margin-top: 20px;
+
+      .company_address {
+        font: 300 16px/24px $priFont;
+        color: $textColor;
+        margin-bottom: 15px;
+      }
+
+      .tel, .fn {
+        font: 500 16px/24px $priFont;
+        color: $textColor;
+        a {
+          &:hover {
+            color: $secColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.copyright {
+  padding: 20px 0;
+  &_holder {
+    .copyright_text {
+      font: 300 12px $priFont;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .site_footer {
+    display: none;
+  }
+}

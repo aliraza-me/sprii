@@ -10,9 +10,42 @@
   align-items: center;
 }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
 
 .b-sap {
   .container {
     border-bottom: 1px solid $sapColor;
+  }
+}
+
+.mobile_notify_me {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: -4px 0 20px rgba(0,0,0,.4);
+
+  .btn_notify {
+    font: 700 18px $priFont;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 13px 0;
+    color: #fff;
+    background: $greenColor;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .mobile_notify_me {
+    display: block;
   }
 }

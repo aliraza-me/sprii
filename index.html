@@ -10,24 +10,24 @@
   <body class="bm-home">
     <!-- Preloader Start -->
       <div class="preloader">
-      <div class="preloader-wrapper">
-        <img id="image" src="./public/img/a.png">
+        <div class="preloader-wrapper">
+          <img id="image" src="./public/img/a.png">
+        </div>
       </div>
-    </div>
     <!-- Preloader End -->
 
     <!-- Header Start -->
       <header class="site_header">
         <div class="container">
           <div class="site_header_holder">
-            <div class="row">
-              <div class="col-md-6 align-middle">
+            <div class="row align-middle">
+              <div class="col-md-6 col-4 align-middle">
                 <div class="site_logo">
                   <a href="#"> <img src="./public/svg/logo.svg" alt=""> </a>
                 </div>
               </div>
 
-              <div class="col-md-6 align-middle">
+              <div class="col-md-6 col-8 align-middle">
                 <div class="site_cart">
                   <span class="site_cart_text">Free Shipping Sitewide!</span>
                   <span class="site_cart_icon">
@@ -49,10 +49,25 @@
     <!-- Offer Banner Start -->
       <section class="hero_banner_slider">
         <div class="hero_banner_slider_holder">
+          <div class="hero_counter mobile">
+            <div class="hero_counter_holder">
+              <h4 class="counter_caption">Sale starts in</h4>
+
+              <div class="counter">
+                <ul class="counter-group">
+                  <li class="counter-group-item"><span class="numaric" id="days">00</span><h4 class="caption"> D</h4></li>
+                  <li class="counter-group-item"><span class="numaric" id="hours">00</span><h4 class="caption"> H</h4></li>
+                  <li class="counter-group-item"><span class="numaric" id="minutes">00</span><h4 class="caption"> M</h4></li>
+                  <li class="counter-group-item"><span class="numaric" id="seconds">00</span><h4 class="caption"> S</h4></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           <div class="container">
             <div class="hero_banner_group">
-              <div class="row align-middle">
-                <div class="col-md-5">
+              <div class="row align-middle row-eq-height">
+                <div class="col-lg-5 col-md-12 col-12">
                   <div class="hero_offer_content">
                     <div class="hero_offer_detail">
                       <div class="hero_offer_discount">
@@ -85,7 +100,7 @@
                       </div>
                     </div>
 
-                    <div class="hero_counter">
+                    <div class="hero_counter desktop">
                       <div class="hero_counter_holder">
                         <h4 class="counter_caption">Sale starts in</h4>
 
@@ -102,7 +117,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-7">
+                <div class="col-lg-7 col-md-12 col-12">
                   <div class="hero_slider_img">
                     <div class="hero_slider_img_holder">
                       <ul class="hero_slider_img_group">
@@ -191,59 +206,57 @@
     <!-- Feature Cards End-->
 
     <!-- Overview Start -->
-      <section class="site_section overview_cards">
-        <div class="site_section_holder">
-          <div class="container">
-            <div class="site_section_title">
-              <h2 class="site_section_title_text">Overview</h2>
-            </div>
+      <section class="site_section overview_cards b-sap">
+        <div class="container">
+          <div class="site_section_title">
+            <h2 class="site_section_title_text">Overview</h2>
+          </div>
 
-            <div class="site_section_holder">
-              <div class="overview_group">
-                <div class="overview_group_item">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="overview_img">
-                        <img src="./public/img/overview-01.png" alt="">
-                      </div>
+          <div class="site_section_holder">
+            <div class="overview_group">
+              <div class="overview_group_item">
+                <div class="row align-middle">
+                  <div class="col-md-6">
+                    <div class="overview_img">
+                      <img src="./public/img/overview-01.png" alt="">
                     </div>
+                  </div>
 
-                    <div class="col-md-6">
-                      <div class="overview_des">
-                        <p class="overview_des_text">The tail lamps are the key apects of broon’s sophisticated design.</p>
-                      </div>
+                  <div class="col-md-6">
+                    <div class="overview_des">
+                      <p class="overview_des_text">The tail lamps are the key apects of broon’s sophisticated design.</p>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="overview_group_item">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="overview_img">
-                        <img src="./public/img/overview-02.png" alt="">
-                      </div>
+              <div class="overview_group_item">
+                <div class="row align-middle">
+                  <div class="col-md-6">
+                    <div class="overview_img">
+                      <img src="./public/img/overview-02.png" alt="">
                     </div>
+                  </div>
 
-                    <div class="col-md-6">
-                      <div class="overview_des">
-                        <p class="overview_des_text">The tail lamps are the key apects of broon’s sophisticated design.</p>
-                      </div>
+                  <div class="col-md-6">
+                    <div class="overview_des">
+                      <p class="overview_des_text">Broon’s speakers deliever high quality sound. Play your child’s favorite songs and movies.</p>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="overview_group_item">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="overview_img">
-                        <img src="./public/img/overview-03.png" alt="">
-                      </div>
+              <div class="overview_group_item">
+                <div class="row align-middle">
+                  <div class="col-md-6">
+                    <div class="overview_img">
+                      <img src="./public/img/overview-03.png" alt="">
                     </div>
+                  </div>
 
-                    <div class="col-md-6">
-                      <div class="overview_des">
-                        <p class="overview_des_text">The tail lamps are the key apects of broon’s sophisticated design.</p>
-                      </div>
+                  <div class="col-md-6">
+                    <div class="overview_des">
+                      <p class="overview_des_text">Broon’s speakers deliever high quality sound. Play your child’s favorite songs and movies.</p>
                     </div>
                   </div>
                 </div>
@@ -255,13 +268,13 @@
     <!-- Overview End -->
 
     <!-- Newsletter Start -->
-      <section class="site_section site_newsletter">
-        <div class="site_section_holder">
-          <div class="container">
+      <section class="site_newsletter">
+        <div class="container">
+          <div class="site_newsletter_holder">
             <div class="row">
               <div class="col-md-6">
                 <div class="newsletter_title">
-                  <h2 class="newsletter_title_text">Our newsletter</h2>
+                  <h2 class="newsletter_title_text">Our Newsletter</h2>
                   <p class="newsletter_title_des">To hear all about our latest offers and deals</p>
                 </div>
               </div>
@@ -270,7 +283,7 @@
                 <div class="newsletter_form">
                   <div class="newsletter_form_holder">
                     <input type="text" name="" value="" placeholder="Your email ...">
-                    <input type="text" name="" value="Submit">
+                    <input type="submit" name="" value="Submit">
                   </div>
                 </div>
               </div>
@@ -281,15 +294,15 @@
     <!-- Newsletter End -->
 
     <!-- usps Start -->
-      <section class="site_section site_usps">
-        <div class="site_section_holder">
-          <div class="container">
+      <section class="site_usps">
+        <div class="container">
+          <div class="site_usps_holder">
             <div class="site_usps_group">
               <div class="row">
                 <div class="col-md-3">
                   <div class="site_usps_group_item">
                     <div class="usps_icon">
-                      <img src="" alt="">
+                      <img src="./public/svg/free-delivery.svg" alt="">
                     </div>
 
                     <div class="usps_des">
@@ -302,7 +315,7 @@
                 <div class="col-md-3">
                   <div class="site_usps_group_item">
                     <div class="usps_icon">
-                      <img src="" alt="">
+                      <img src="./public/svg/return.svg" alt="">
                     </div>
 
                     <div class="usps_des">
@@ -315,7 +328,7 @@
                 <div class="col-md-3">
                   <div class="site_usps_group_item">
                     <div class="usps_icon">
-                      <img src="" alt="">
+                      <img src="./public/svg/price-match.svg" alt="">
                     </div>
 
                     <div class="usps_des">
@@ -328,7 +341,7 @@
                 <div class="col-md-3">
                   <div class="site_usps_group_item">
                     <div class="usps_icon">
-                      <img src="" alt="">
+                      <img src="./public/svg/cash-on-delivery.svg" alt="">
                     </div>
 
                     <div class="usps_des">
@@ -346,8 +359,8 @@
 
     <!-- Footer Start -->
       <footer class="site_footer">
-        <div class="site_footer_holder">
-          <div class="container">
+        <div class="container">
+          <div class="site_footer_holder">
             <div class="row">
               <div class="col-md-3">
                 <div class="site_footer_nav">
@@ -356,12 +369,12 @@
                   </div>
 
                   <div class="site_footer_nav_links">
-                    <ul class="nav-links">
-                      <li class="link-text"><a href="https://www.sprii.ae/en/toys/">Toys</a></li>
-                      <li class="link-text"><a href="https://www.sprii.ae/en/baby-toddler-diapering-disposable-diapers-disposable-diapers/">Diapers</a></li>
-                      <li class="link-text"><a href="https://www.sprii.ae/en/baby-food/">Baby Food</a></li>
-                      <li class="link-text"><a href="https://www.sprii.ae/en/standard/">Strollers</a></li>
-                      <li class="link-text"><a href="https://www.sprii.ae/en/car-seats/">Car Seats</a></li>
+                    <ul class="nav_links">
+                      <li class="link_text"><a href="https://www.sprii.ae/en/toys/">Toys</a></li>
+                      <li class="link_text"><a href="https://www.sprii.ae/en/baby-toddler-diapering-disposable-diapers-disposable-diapers/">Diapers</a></li>
+                      <li class="link_text"><a href="https://www.sprii.ae/en/baby-food/">Baby Food</a></li>
+                      <li class="link_text"><a href="https://www.sprii.ae/en/standard/">Strollers</a></li>
+                      <li class="link_text"><a href="https://www.sprii.ae/en/car-seats/">Car Seats</a></li>
                     </ul>
                   </div>
                 </div>
@@ -374,12 +387,12 @@
                   </div>
 
                   <div class="site_footer_nav_links">
-                    <ul class="nav-links">
-                      <li class="link-text"><a href="https://www.sprii.ae/en/toys/">Toys</a></li>
-                      <li class="link-text"><a href="https://www.sprii.ae/en/baby-toddler-diapering-disposable-diapers-disposable-diapers/">Diapers</a></li>
-                      <li class="link-text"><a href="https://www.sprii.ae/en/baby-food/">Baby Food</a></li>
-                      <li class="link-text"><a href="https://www.sprii.ae/en/standard/">Strollers</a></li>
-                      <li class="link-text"><a href="https://www.sprii.ae/en/car-seats/">Car Seats</a></li>
+                    <ul class="nav_links">
+                      <li class="link_text"><a href="https://www.sprii.ae/en/toys/">Toys</a></li>
+                      <li class="link_text"><a href="https://www.sprii.ae/en/baby-toddler-diapering-disposable-diapers-disposable-diapers/">Diapers</a></li>
+                      <li class="link_text"><a href="https://www.sprii.ae/en/baby-food/">Baby Food</a></li>
+                      <li class="link_text"><a href="https://www.sprii.ae/en/standard/">Strollers</a></li>
+                      <li class="link_text"><a href="https://www.sprii.ae/en/car-seats/">Car Seats</a></li>
                     </ul>
                   </div>
                 </div>
@@ -392,12 +405,12 @@
                   </div>
 
                   <div class="site_footer_nav_links">
-                    <ul class="nav-links">
-                      <li class="link-text"><a href="https://www.sprii.ae/en/toys/">Toys</a></li>
-                      <li class="link-text"><a href="https://www.sprii.ae/en/baby-toddler-diapering-disposable-diapers-disposable-diapers/">Diapers</a></li>
-                      <li class="link-text"><a href="https://www.sprii.ae/en/baby-food/">Baby Food</a></li>
-                      <li class="link-text"><a href="https://www.sprii.ae/en/standard/">Strollers</a></li>
-                      <li class="link-text"><a href="https://www.sprii.ae/en/car-seats/">Car Seats</a></li>
+                    <ul class="nav_links">
+                      <li class="link_text"><a href="https://www.sprii.ae/en/toys/">Toys</a></li>
+                      <li class="link_text"><a href="https://www.sprii.ae/en/baby-toddler-diapering-disposable-diapers-disposable-diapers/">Diapers</a></li>
+                      <li class="link_text"><a href="https://www.sprii.ae/en/baby-food/">Baby Food</a></li>
+                      <li class="link_text"><a href="https://www.sprii.ae/en/standard/">Strollers</a></li>
+                      <li class="link_text"><a href="https://www.sprii.ae/en/car-seats/">Car Seats</a></li>
                     </ul>
                   </div>
                 </div>
@@ -433,6 +446,36 @@
         </div>
       </footer>
     <!-- Footer End -->
+
+    <!-- Copyright -->
+      <div class="copyright">
+        <div class="container">
+          <div class="copyright_holder">
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="copyright_text">
+                    <span>Copyright © 2018 SPRII.COM</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="payments_method">
+                    <ul class="payments_method_holder">
+                      <li class="payment_method_logo"> <img src="" alt=""> </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Copyright -->
+
+    <!-- Mobile Notify me Button Start-->
+      <div class="mobile_notify_me">
+        <a class="btn_notify" href="#">Notify me</a>
+      </div>
+    <!-- Mobile Notify me Button Start-->
 
     <!-- Java Script -->
     <script src="./public/js/app.min.js"></script>

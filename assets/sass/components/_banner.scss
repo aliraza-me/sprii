@@ -1,8 +1,7 @@
 .hero_banner_slider {
   padding: 60px 0;
   background: #f4f4f4;
-
-
+  position: relative;
   &_holder {
     .hero_banner_group {
       position: relative;
@@ -11,6 +10,7 @@
         text-align: center;
         padding: 40px 15px;
         position: relative;
+
 
         .hero_offer_detail {
           .hero_offer_discount {
@@ -56,6 +56,8 @@
 
         .hero_form {
           margin-top: 35px;
+          position: relative;
+          z-index: 9;
 
           &_holder {
             position: relative;
@@ -75,16 +77,18 @@
               }
 
               input[type="submit"] {
-                width: 100px;
-                font: 500 16px $priFont;
+                width: 120px;
+                font: 500 14px $priFont;
                 color: #fff;
                 background: $greenColor;
-                birder: none;
+                border: none;
                 border-radius: 3px;
                 position: absolute;
                 top: 5px;
                 right: 5px;
                 bottom: 5px;
+                text-transform: uppercase;
+                cursor: pointer;
 
                 &:focus, &:hover {
                   outline: none;
@@ -154,6 +158,14 @@
           right: -10px;
           bottom: -10px;
           left: -10px;
+
+        }
+      }
+
+      .hero_slider_img {
+        padding: 40px 0;
+        img {
+          width: 100%;
         }
       }
 
@@ -174,7 +186,7 @@
 
 .hero_slider_video {
   position: absolute;
-  top: 100%;
+  top: calc(100% - 20px);
   right: 0;
   text-decoration: none;
   display: inline-block;
@@ -187,4 +199,163 @@
     display: inline-block;
     font-weight: 500;
   }
+}
+
+.hero_counter{
+  &.mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero_banner_slider {
+    &_holder {
+      .hero_banner_group {
+        .row {
+          .col-lg-5 {
+            order: 2;
+          }
+        }
+
+        .hero_form {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .hero_counter.mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    .hero_counter_holder {
+      display: flex;
+      .counter_caption {
+        background: #000;
+        color: #fff;
+        width: 25%;
+        padding: 10px 20px;
+        font: 500 14px $priFont;
+        display: flex;
+        align-items: center;
+      }
+      .counter {
+        background: $redColor;
+        width: 75%;
+        padding: 10px 40px;
+        color: #fff;
+        .counter-group {
+          &-item {
+            display: inline-block;
+            margin-right: 5px;
+            font: 500 18px $priFont;
+
+            .numaric {
+              display: inline-block;
+              margin-right: 3px;
+            }
+
+            .caption {
+              display: inline-block;
+            }
+
+            &:not(:last-child):after {
+              content: ':';
+              position: relative;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hero_counter.desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero_counter.mobile {
+    .hero_counter_holder {
+      .counter_caption {
+        width: 35%;
+        padding: 10px 10px;
+      }
+      .counter {
+        padding: 10px 10px;
+        .counter-group {
+          &-item {
+            margin-right: 3px;
+            font: 500 18px $priFont;
+
+            .numaric {
+              margin-right: 3px;
+            }
+
+            &:not(:last-child):after {
+              margin-left: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hero_banner_slider {
+    padding: 30px 0;
+    &_holder {
+      .hero_banner_group {
+        .hero_offer_content {
+          margin-top: 50px;
+          padding: 20px 15px;
+
+          .hero_offer_detail {
+            .hero_offer_discount {
+              font: 300 36px $priFont;
+              margin-bottom: 10px;
+            }
+
+            .hero_offer_title {
+              font: 700 26px $priFont;
+            }
+          }
+
+          .hero_offer_price {
+            margin-top: 20px;
+            .regular_price {
+              &_text {
+                font: 700 21px $priFont;
+                color: $priColor;
+              }
+            }
+
+            .sale_price {
+              font: 700 30px $priFont;
+            }
+          }
+
+          .hero_form {
+            display: none;
+          }
+        }
+
+        .hero_slider_img {
+          padding: 20px 0;
+          img {
+            width: 80%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  .hero_slider_video {
+    top: 100%;
+    right: 10px;
+  }
+
 }

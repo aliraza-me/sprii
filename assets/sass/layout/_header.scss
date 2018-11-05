@@ -19,3 +19,24 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .site_header {
+    &_holder {
+      .site_logo {
+        img {
+          width: 80px;
+        }
+      }
+
+      .site_cart {
+        text-align: right;
+        .site_cart_text {
+          vertical-align: super;
+          font-size: 12px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
