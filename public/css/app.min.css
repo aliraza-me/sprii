@@ -85,22 +85,47 @@
 button.slick-prev.slick-arrow {
   background: transparent; }
 
-.slick-dots li {
-  width: 25px;
-  height: 25px;
-  background: transparent;
-  border: 1px solid #333;
-  border-radius: 30px;
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-  .slick-dots li button {
-    color: transparent;
-    width: 14px;
-    height: 14px;
-    background: #333;
-    border-radius: 15px;
-    border: none; }
+.slick-dots {
+  position: absolute;
+  bottom: 0; }
+  .slick-dots li {
+    width: 22px;
+    height: 22px;
+    background: transparent;
+    border: 1px solid #8c8c8c;
+    border-radius: 22px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    .slick-dots li:after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #8c8c8c;
+      border-radius: 8px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateY(-50%) translateX(-50%);
+          -ms-transform: translateY(-50%) translateX(-50%);
+              transform: translateY(-50%) translateX(-50%);
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .slick-dots li:not(:last-child) {
+      margin-right: 15px; }
+    .slick-dots li.slick-active {
+      border: 1px solid #000; }
+      .slick-dots li.slick-active:after {
+        background: #000; }
+    .slick-dots li button {
+      color: transparent;
+      display: none; }
 
 /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
@@ -1726,6 +1751,9 @@ html {
       -ms-flex-align: center;
           align-items: center; }
 
+.b-sap .container {
+  border-bottom: 1px solid #E3E2E2; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -1799,33 +1827,43 @@ body {
   font: 300 18px/24px "Helvetica"; }
 
 .hero_banner_slider {
-  padding: 30px 0; }
+  padding: 60px 0;
+  background: #f4f4f4; }
   .hero_banner_slider_holder .hero_banner_group {
     position: relative; }
     .hero_banner_slider_holder .hero_banner_group .hero_offer_content {
-      padding: 60px 0; }
+      background: #fff;
+      text-align: center;
+      padding: 40px 15px;
+      position: relative; }
       .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_detail .hero_offer_discount {
-        font: 700 46px "Helvetica";
+        font: 300 56px "Helvetica";
         color: #BE081E;
-        margin-bottom: 20px; }
+        margin-bottom: 22px; }
       .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_detail .hero_offer_title {
-        font: 300 30px "Helvetica";
+        font: 700 36px "Helvetica";
         color: #000;
         margin-bottom: 10px; }
-      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_detail .hero_offer_des_text {
-        font: 300 18px/26px "Helvetica";
-        color: #4A4A4A;
-        margin-bottom: 30px; }
-      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_price .regular_price_text {
-        font: 500 21px "Helvetica";
-        color: #7d7d7d;
-        text-decoration: line-through; }
-      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_price .sale_price {
-        font: 700 36px "Helvetica";
-        color: #BE081E;
-        text-transform: uppercase; }
-      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form {
+      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_detail .hero_offer_des {
+        text-align: center;
+        width: 100%; }
+        .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_detail .hero_offer_des_text {
+          font: 300 18px/26px "Helvetica";
+          color: #4A4A4A;
+          margin-bottom: 30px; }
+      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_price {
         margin-top: 30px; }
+        .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_price .regular_price_text {
+          font: 700 21px "Helvetica";
+          color: #000;
+          text-decoration: line-through;
+          text-transform: uppercase; }
+        .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_offer_price .sale_price {
+          font: 700 36px "Helvetica";
+          color: #BE081E;
+          text-transform: uppercase; }
+      .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form {
+        margin-top: 35px; }
         .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form_holder {
           position: relative; }
           .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form_holder .site_form input[type="text"] {
@@ -1833,48 +1871,47 @@ body {
             height: 50px;
             font: 500 16px "Helvetica";
             color: #4A4A4A;
-            background-color: #f7f7f7;
+            background-color: #fff;
             padding: 0px 15px;
-            border: none;
+            border: 2px solid #000;
             border-radius: 3px; }
             .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form_holder .site_form input[type="text"]:focus {
               outline: none; }
           .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form_holder .site_form input[type="submit"] {
             width: 100px;
-            height: 50px;
             font: 500 16px "Helvetica";
             color: #fff;
-            background: #7CA3DC;
+            background: #00A95B;
             birder: none;
-            border-radius: 0px 3px 3px 0px;
+            border-radius: 3px;
             position: absolute;
-            top: 0;
-            right: 0; }
-            .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form_holder .site_form input[type="submit"]:focus {
-              outline: none; }
+            top: 5px;
+            right: 5px;
+            bottom: 5px; }
+            .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form_holder .site_form input[type="submit"]:focus, .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_form_holder .site_form input[type="submit"]:hover {
+              outline: none;
+              background: #007640; }
       .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_counter {
-        margin-top: 30px; }
+        margin-top: 63px; }
         .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_counter_holder .counter_caption {
           font: 700 14px "Helvetica";
           text-transform: uppercase;
-          letter-spacing: 3px;
-          color: #4A4A4A; }
+          letter-spacing: 5px;
+          color: #BE081E;
+          margin-bottom: 30px; }
         .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_counter_holder .counter-group-item {
           display: inline-block;
-          width: 100px;
+          width: 95px;
           text-align: center;
           position: relative; }
           .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_counter_holder .counter-group-item .numaric {
-            background: #fff;
-            height: 80px;
+            height: 58px;
             width: 100%;
             display: block;
             font: 700 46px/80px "Helvetica";
-            border-radius: 5px; }
-            .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_counter_holder .counter-group-item .numaric#seconds {
-              color: #BE081E; }
+            margin-bottom: 10px; }
           .hero_banner_slider_holder .hero_banner_group .hero_offer_content .hero_counter_holder .counter-group-item .caption {
-            font: 400 16px "Helvetica";
+            font: 400 14px "Helvetica";
             color: #4A4A4A;
             letter-spacing: 2px;
             text-transform: uppercase; }
@@ -1889,6 +1926,14 @@ body {
                     transform: translateY(-50%);
             top: 50%;
             right: 0; }
+      .hero_banner_slider_holder .hero_banner_group .hero_offer_content:after {
+        content: '';
+        position: absolute;
+        border: 2px solid #fff;
+        top: -10px;
+        right: -10px;
+        bottom: -10px;
+        left: -10px; }
     .hero_banner_slider_holder .hero_banner_group:after {
       content: '';
       width: 30%;
@@ -1898,6 +1943,20 @@ body {
       top: 0;
       right: 0;
       z-index: -1; }
+
+.hero_slider_video {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  text-decoration: none;
+  display: inline-block; }
+  .hero_slider_video img {
+    vertical-align: middle; }
+  .hero_slider_video a {
+    text-decoration: none;
+    color: #7CA3DC;
+    display: inline-block;
+    font-weight: 500; }
 
 .preloader {
   position: fixed;
@@ -1938,5 +1997,29 @@ html[lang="ar-AE"] .preloader {
       vertical-align: super;
       font-size: 14px;
       margin-right: 5px; }
+
+.site_section {
+  padding: 60px 0; }
+  .site_section .site_section_title_text {
+    text-align: center;
+    font: 300 36px "Helvetica";
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 60px; }
+
+.feature_cards {
+  text-align: center; }
+  .feature_cards .feature_group_item {
+    padding: 35px 10px; }
+    .feature_cards .feature_group_item .feature_icon {
+      width: 100%; }
+    .feature_cards .feature_group_item .feature_title_text {
+      font: 500 24px "Helvetica";
+      color: #000;
+      margin-top: 24px; }
+    .feature_cards .feature_group_item .feature_des_text {
+      font: 300 18px/24px "Helvetica";
+      color: #4A4A4A;
+      margin-top: 16px; }
 
 /*# sourceMappingURL=app.min.css.map */

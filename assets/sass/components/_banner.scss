@@ -1,26 +1,33 @@
 .hero_banner_slider {
-  padding: 30px 0;
+  padding: 60px 0;
+  background: #f4f4f4;
+
 
   &_holder {
     .hero_banner_group {
       position: relative;
       .hero_offer_content {
-        padding: 60px 0;
+        background: #fff;
+        text-align: center;
+        padding: 40px 15px;
+        position: relative;
 
         .hero_offer_detail {
           .hero_offer_discount {
-            font: 700 46px $priFont;
+            font: 300 56px $priFont;
             color: $redColor;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
           }
 
           .hero_offer_title {
-            font: 300 30px $priFont;
+            font: 700 36px $priFont;
             color: $priColor;
             margin-bottom: 10px;
           }
 
           .hero_offer_des {
+            text-align: center;
+            width: 100%;
             &_text {
               font: 300 18px/26px $priFont;
               color: $textColor;
@@ -30,11 +37,13 @@
         }
 
         .hero_offer_price {
+          margin-top: 30px;
           .regular_price {
             &_text {
-              font: 500 21px $priFont;
-              color: lighten($textColor, 20%);
+              font: 700 21px $priFont;
+              color: $priColor;
               text-decoration: line-through;
+              text-transform: uppercase;
             }
           }
 
@@ -46,7 +55,7 @@
         }
 
         .hero_form {
-          margin-top: 30px;
+          margin-top: 35px;
 
           &_holder {
             position: relative;
@@ -56,9 +65,9 @@
                 height: 50px;
                 font: 500 16px $priFont;
                 color: $textColor;
-                background-color: $inputColor;
+                background-color: #fff;
                 padding: 0px 15px;
-                border: none;
+                border: 2px solid $priColor;
                 border-radius: 3px;
                 &:focus {
                   outline: none;
@@ -67,18 +76,19 @@
 
               input[type="submit"] {
                 width: 100px;
-                height: 50px;
                 font: 500 16px $priFont;
                 color: #fff;
-                background: $secColor;
+                background: $greenColor;
                 birder: none;
-                border-radius: 0px 3px 3px 0px;
+                border-radius: 3px;
                 position: absolute;
-                top: 0;
-                right: 0;
+                top: 5px;
+                right: 5px;
+                bottom: 5px;
 
-                &:focus {
+                &:focus, &:hover {
                   outline: none;
+                  background: darken($greenColor, 10%);
                 }
               }
             }
@@ -86,39 +96,34 @@
         }
 
         .hero_counter {
-          margin-top: 30px;
+          margin-top: 63px;
           &_holder {
             .counter_caption {
               font: 700 14px $priFont;
               text-transform: uppercase;
-              letter-spacing: 3px;
-              color: $textColor;
+              letter-spacing: 5px;
+              color: $redColor;
+              margin-bottom: 30px;
             }
 
             .counter {
               &-group {
-
                 &-item {
                   display: inline-block;
-                  width: 100px;
+                  width: 95px;
                   text-align: center;
                   position: relative;
 
                   .numaric {
-                    background: #fff;
-                    height: 80px;
+                    height: 58px;
                     width: 100%;
                     display: block;
                     font: 700 46px/80px $priFont;
-                    border-radius: 5px;
-
-                    &#seconds {
-                      color: $redColor;
-                    }
+                    margin-bottom: 10px;
                   }
 
                   .caption {
-                    font: 400 16px $priFont;
+                    font: 400 14px $priFont;
                     color: $textColor;
                     letter-spacing: 2px;
                     text-transform: uppercase;
@@ -140,6 +145,16 @@
             }
           }
         }
+
+        &:after {
+          content: '';
+          position: absolute;
+          border: 2px solid #fff;
+          top: -10px;
+          right: -10px;
+          bottom: -10px;
+          left: -10px;
+        }
       }
 
       &:after {
@@ -154,5 +169,22 @@
       }
 
     }
+  }
+}
+
+.hero_slider_video {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  text-decoration: none;
+  display: inline-block;
+  img {
+    vertical-align: middle;
+  }
+  a {
+    text-decoration: none;
+    color: $secColor;
+    display: inline-block;
+    font-weight: 500;
   }
 }

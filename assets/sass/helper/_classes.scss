@@ -9,3 +9,10 @@
 .align-middle {
   align-items: center;
 }
+
+
+.b-sap {
+  .container {
+    border-bottom: 1px solid $sapColor;
+  }
+}

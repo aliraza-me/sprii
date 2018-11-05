@@ -1,0 +1,41 @@
+.site_section {
+  padding: 60px 0 ;
+    .site_section_title {
+      &_text {
+        text-align: center;
+        font: 300 36px $priFont;
+        color: $priColor;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+      }
+    }
+}
+
+
+.feature_cards {
+  text-align: center;
+  .feature_group {
+    &_item {
+      padding: 35px 10px;
+      .feature_icon {
+        width: 100%;
+      }
+
+      .feature_title {
+        &_text {
+          font: 500 24px $priFont;
+          color: $priColor;
+          margin-top: 24px;
+        }
+      }
+
+      .feature_des {
+        &_text {
+          font: 300 18px/24px $priFont;
+          color: $textColor;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}

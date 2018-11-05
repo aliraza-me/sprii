@@ -108,21 +108,48 @@ button.slick-prev.slick-arrow {
 }
 
 .slick-dots {
+  position: absolute;
+  bottom: 0;
   li {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     background: transparent;
-    border: 1px solid #333;
-    border-radius: 30px;
+    border: 1px solid #8c8c8c;
+    border-radius: 22px;
     display: inline-block;
     box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+
+    &:after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #8c8c8c;
+      border-radius: 8px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      transition: .3s;
+    }
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    &.slick-active {
+      border: 1px solid #000;
+
+      &:after {
+        background: #000;
+      }
+    }
+
     button {
       color: transparent;
-      width: 14px;
-      height: 14px;
-      background: #333;
-      border-radius: 15px;
-      border: none;
+      display: none;
     }
   }
 }
