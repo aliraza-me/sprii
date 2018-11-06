@@ -48,6 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-input[type="subnit"], input[type="button"], input[type="date"], button, select {
-	-webkit-appearance:none;
+input[type="submit"], input[type="button"], input[type="date"], button, select {
+	-webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
