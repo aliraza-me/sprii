@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>submit icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8" transform="translate(-323.000000, -2589.000000)" fill="#FFFFFF">
+            <g id="newsletter-form" transform="translate(17.000000, 2573.000000)">
+                <g id="Subnit" transform="translate(291.000000, 0.000000)">
+                    <g id="submit-icon" transform="translate(15.000000, 16.000000)">
+                        <path d="M8.0574774,14.1631379 L15.2589182,17 L19.9898398,1.01905228 C20.0624103,0.339684093 19.7462223,0 19.0412759,0 L0.726928581,9.75396614 C-0.242309527,10.2659708 -0.242309527,10.7105932 0.726928581,11.0878332 L2.69645822,12.001023 C3.75565,12.4468217 4.72159712,12.2938252 5.59429958,11.5420336 L16.4272189,3.20612045 L8.0574774,12.3244077 C7.47252541,13.0686376 7.32628741,13.5611502 7.61876341,13.8019453 C7.9112394,14.0427404 8.0574774,14.1631379 8.0574774,14.1631379 Z" id="Path-2"></path>
+                        <path d="M6.47012279,19 L7.81931865,16.5735366 C8.20184413,15.7233973 7.97697816,15.0985407 7.14472072,14.698967 C6.31246328,14.2993933 5.78501919,14.0664043 5.56238847,14 C5,14.0723069 4.85940288,14.4224463 5.14059712,15.0504181" id="Path-3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

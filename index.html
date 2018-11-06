@@ -11,7 +11,12 @@
     <!-- Preloader Start -->
       <div class="preloader">
         <div class="preloader-wrapper">
-          <img id="image" src="./public/img/a.png">
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1"><defs><filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" /><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" /><feBlend in="SourceGraphic" in2="goo" /></filter></defs></svg>
         </div>
       </div>
     <!-- Preloader End -->
@@ -55,10 +60,10 @@
 
               <div class="counter">
                 <ul class="counter-group">
-                  <li class="counter-group-item"><span class="numaric" id="days">00</span><h4 class="caption"> D</h4></li>
-                  <li class="counter-group-item"><span class="numaric" id="hours">00</span><h4 class="caption"> H</h4></li>
-                  <li class="counter-group-item"><span class="numaric" id="minutes">00</span><h4 class="caption"> M</h4></li>
-                  <li class="counter-group-item"><span class="numaric" id="seconds">00</span><h4 class="caption"> S</h4></li>
+                  <li class="counter-group-item"><span class="numaric days" id="days">00</span><h4 class="caption"> D</h4></li>
+                  <li class="counter-group-item"><span class="numaric hours" id="hours">00</span><h4 class="caption"> H</h4></li>
+                  <li class="counter-group-item"><span class="numaric minutes" id="minutes">00</span><h4 class="caption"> M</h4></li>
+                  <li class="counter-group-item"><span class="numaric seconds" id="seconds">00</span><h4 class="caption"> S</h4></li>
                 </ul>
               </div>
             </div>
@@ -106,10 +111,10 @@
 
                         <div class="counter">
                           <ul class="counter-group">
-                            <li class="counter-group-item"><span class="numaric" id="days">00</span><h4 class="caption">days</h4></li>
-                            <li class="counter-group-item"><span class="numaric" id="hours">00</span><h4 class="caption">Hrs</h4></li>
-                            <li class="counter-group-item"><span class="numaric" id="minutes">00</span><h4 class="caption">Min</h4></li>
-                            <li class="counter-group-item"><span class="numaric" id="seconds">00</span><h4 class="caption">Sec</h4></li>
+                            <li class="counter-group-item"><span class="numaric days" id="days2">00</span><h4 class="caption">days</h4></li>
+                            <li class="counter-group-item"><span class="numaric hours" id="hours2">00</span><h4 class="caption">Hrs</h4></li>
+                            <li class="counter-group-item"><span class="numaric minutes" id="minutes2">00</span><h4 class="caption">Min</h4></li>
+                            <li class="counter-group-item"><span class="numaric seconds" id="seconds2">00</span><h4 class="caption">Sec</h4></li>
                           </ul>
                         </div>
                       </div>
@@ -151,7 +156,7 @@
           <div class="site_section_holder">
             <div class="feature_group">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12">
                   <div class="feature_group_item">
                     <div class="feature_icon">
                       <img src="./public/svg/remote-control.svg" alt="">
@@ -167,7 +172,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12">
                   <div class="feature_group_item">
                     <div class="feature_icon">
                       <img src="./public/svg/car.svg" alt="">
@@ -183,7 +188,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12">
                   <div class="feature_group_item">
                     <div class="feature_icon">
                       <img src="./public/svg/speed.svg" alt="">
@@ -216,13 +221,13 @@
             <div class="overview_group">
               <div class="overview_group_item">
                 <div class="row align-middle">
-                  <div class="col-md-6">
+                  <div class="col-lg-6 col-md-12">
                     <div class="overview_img">
                       <img src="./public/img/overview-01.png" alt="">
                     </div>
                   </div>
 
-                  <div class="col-md-6">
+                  <div class="col-lg-6 col-md-12">
                     <div class="overview_des">
                       <p class="overview_des_text">The tail lamps are the key apects of broon’s sophisticated design.</p>
                     </div>
@@ -232,13 +237,13 @@
 
               <div class="overview_group_item">
                 <div class="row align-middle">
-                  <div class="col-md-6">
+                  <div class="col-lg-6 col-md-12">
                     <div class="overview_img">
                       <img src="./public/img/overview-02.png" alt="">
                     </div>
                   </div>
 
-                  <div class="col-md-6">
+                  <div class="col-lg-6 col-md-12">
                     <div class="overview_des">
                       <p class="overview_des_text">Broon’s speakers deliever high quality sound. Play your child’s favorite songs and movies.</p>
                     </div>
@@ -248,18 +253,37 @@
 
               <div class="overview_group_item">
                 <div class="row align-middle">
-                  <div class="col-md-6">
+                  <div class="col-lg-6 col-md-12">
                     <div class="overview_img">
                       <img src="./public/img/overview-03.png" alt="">
                     </div>
                   </div>
 
-                  <div class="col-md-6">
+                  <div class="col-lg-6 col-md-12">
                     <div class="overview_des">
                       <p class="overview_des_text">Broon’s speakers deliever high quality sound. Play your child’s favorite songs and movies.</p>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Overview End -->
+
+    <!-- Overview Start -->
+      <section class="site_section android">
+        <div class="container">
+          <div class="site_section_title">
+            <h2 class="site_section_title_text">ANDROID OS</h2>
+            <p class="site_section_des">The 3rd generation Broon with 7 inchtablet pc with andriod OS opens a new world for children</p>
+          </div>
+
+          <div class="site_section_holder">
+            <div class="container">
+              <div class="android_img">
+                <img src="./public/img/android.png" alt="">
               </div>
             </div>
           </div>
@@ -299,7 +323,7 @@
           <div class="site_usps_holder">
             <div class="site_usps_group">
               <div class="row">
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-6">
                   <div class="site_usps_group_item">
                     <div class="usps_icon">
                       <img src="./public/svg/free-delivery.svg" alt="">
@@ -312,7 +336,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-6">
                   <div class="site_usps_group_item">
                     <div class="usps_icon">
                       <img src="./public/svg/return.svg" alt="">
@@ -325,7 +349,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-6">
                   <div class="site_usps_group_item">
                     <div class="usps_icon">
                       <img src="./public/svg/price-match.svg" alt="">
@@ -338,7 +362,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-6">
                   <div class="site_usps_group_item">
                     <div class="usps_icon">
                       <img src="./public/svg/cash-on-delivery.svg" alt="">
@@ -362,7 +386,7 @@
         <div class="container">
           <div class="site_footer_holder">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="site_footer_nav">
                   <div class="site_footer_nav_title">
                     <h2 class="nav_title_text">Top Categories</h2>
@@ -380,7 +404,7 @@
                 </div>
               </div>
 
-              <div class="col-md-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="site_footer_nav">
                   <div class="site_footer_nav_title">
                     <h2 class="nav_title_text">about</h2>
@@ -398,7 +422,7 @@
                 </div>
               </div>
 
-              <div class="col-md-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="site_footer_nav">
                   <div class="site_footer_nav_title">
                     <h2 class="nav_title_text">customer service</h2>
@@ -416,7 +440,7 @@
                 </div>
               </div>
 
-              <div class="col-md-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="site_footer_nav">
                   <div class="site_footer_nav_title">
                     <h2 class="nav_title_text">Company Info</h2>
@@ -473,9 +497,41 @@
 
     <!-- Mobile Notify me Button Start-->
       <div class="mobile_notify_me">
-        <a class="btn_notify" href="#">Notify me</a>
+        <a class="btn_notify" id="btnNotify" href="#">Notify me</a>
       </div>
     <!-- Mobile Notify me Button Start-->
+
+    <!-- Popup Start -->
+      <div class="action_popup">
+        <div class="action_popup_holder">
+          <div class="row align-middle">
+            <div class="col-md-6">
+              <div class="popup_content">
+                <h1 class="popup_content_title">FLash Sale 90% OFF</h1>
+                <p class="expiry_date">15th of December, 2018 2:00 PM Dubai Time</p>
+
+                <div class="popup_content_form">
+                  <input type="text" name="" value="" placeholder="Email address...">
+                  <input type="submit" name="" value="Notify me">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="popup_image">
+                <img src='./public/img/popup.png'
+                     srcset='./public/img/popup.png 2000w,
+                             ./public/img/popup-mobile.png 480w'
+                     sizes='(min-width: 960px) 960px,
+                            100vw'/>
+              </div>
+            </div>
+
+            <a href="javaScript:;" id="popupClose" class="btn_close"> <img src="./public/svg/close.svg" alt=""> </a>
+          </div>
+        </div>
+      </div>
+    <!-- Popup End -->
 
     <!-- Java Script -->
     <script src="./public/js/app.min.js"></script>

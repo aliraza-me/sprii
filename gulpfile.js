@@ -94,14 +94,7 @@ gulp.task('sass_build', function(){
 gulp.task('js', function(){
   return gulp.src([
       assets + 'js/jquery.min.js',
-      assets + 'js/skrollr.js',
-      assets + 'js/iphone-inline-video.js',
-      assets + 'js/index.js',
-      assets + 'js/TweenMax.min.js',
-      assets + 'js/MorphSVGPlugin.min.js',
       assets + 'js/slick.js',
-      assets + 'js/jquery.easing.min.js',
-      assets + 'js/jquery-ui.min.js',
       assets + 'js/main.js'
     ])
     .pipe(sourcemaps.init())
@@ -117,9 +110,7 @@ gulp.task('js', function(){
 gulp.task('js_build', function(){
   return gulp.src([
       assets + 'js/jquery.min.js',
-      assets + 'js/skrollr.js',
-      assets + 'js/TweenMax.min.js',
-      assets + 'js/MorphSVGPlugin.min.js',
+      assets + 'js/slick.js',
       assets + 'js/main.js'
     ])
     .pipe(sourcemaps.init())

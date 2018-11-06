@@ -1,9 +1,11 @@
 .site_footer {
+  background: #f4f4f4;
   &_holder {
-    background: #f4f4f4;
+
     padding: 55px 0;
     .site_footer_nav {
       padding: 0 20px;
+      margin-bottom: 30px;
       &_title {
         font: 700 16px $priFont;
         color: $priColor;

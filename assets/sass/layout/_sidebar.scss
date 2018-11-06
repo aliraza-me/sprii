@@ -10,9 +10,30 @@
       }
     }
 
+    .site_section_des {
+      max-width: 780px;
+      margin: 0 auto;
+      font: 300 24px/35px $priFont;
+      text-align: center;
+      color: $textColor;
+    }
     &_holder {
       padding-bottom: 60px;
     }
+}
+
+.android {
+  .android_img {
+    margin-top: 50px;
+
+    img {
+      vertical-align: bottom;
+      width: 100%;
+    }
+  }
+  .site_section_holder {
+    padding: 0;
+  }
 }
 
 
@@ -46,8 +67,6 @@
 }
 
 .overview_cards {
-  padding: 60px 0;
-
   .overview_group {
 
     &_item {
@@ -82,9 +101,10 @@
 }
 
 .site_newsletter {
+  background: $secColor;
   &_holder {
     padding: 55px 25px;
-    background: $secColor;
+
 
     .newsletter_title {
       color: #fff;
@@ -110,6 +130,10 @@
           border-radius: 3px;
           padding-left: 20px;
           font: 300 18px $priFont;
+
+          &:focus {
+            outline: none;
+          }
         }
 
         input[type="submit"] {
@@ -123,6 +147,11 @@
           font: 500 16px $priFont;
           text-transform: uppercase;
           color: #fff;
+
+          &:hover, &:focus {
+            outline: none;
+            background: darken($secColor, 30%);
+          }
         }
       }
     }
@@ -130,13 +159,14 @@
 }
 
 .site_usps {
+  background: #666;
   &_holder {
-    background: #666;
     padding: 55px 25px;
     color: #fff;
 
     .site_usps_group {
       &_item {
+        margin-bottom: 20px;
         .usps_icon {
           display: inline-block;
           width: 60px;
@@ -166,6 +196,10 @@
       }
     }
   }
+}
+
+@media (max-width: 768px) {
+
 }
 
 @media (max-width: 480px) {
@@ -224,6 +258,26 @@
 
     .newsletter_form {
       margin-top: 15px;
+
+      &_holder {
+        input[type="submit"] {
+          color: transparent;
+          width: 50px;
+        }
+
+        &:after {
+          content: '';
+          width: 25px;
+          height: 25px;
+          background: url(../svg/submit.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 12.5px;
+        }
+      }
     }
   }
 

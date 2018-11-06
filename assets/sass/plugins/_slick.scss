@@ -153,3 +153,22 @@ button.slick-prev.slick-arrow {
     }
   }
 }
+
+
+@media (max-width: 480px) {
+  .slick-dots {
+    li {
+      width: 18px;
+      height: 18px;
+
+      &:after {
+        width: 6px;
+        height: 6px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
